@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Text, View} from 'react-native';
+import {StatusBar, Text, View} from 'react-native';
 
 // export default function App() {
 //   return (
@@ -37,34 +37,52 @@ import {Text, View} from 'react-native';
 //   );
 // }
 
+// export default function App() {
+//   return (
+//     <View style={{flex: 1}}>
+//       <Text
+//         style={{
+//           fontWeight: 'bold',
+//           fontStyle: 'normal',
+//           textAlign: 'right',
+//         }}>
+//         <Text style={{fontSize: 26, color: 'blue'}}>Hello</Text>
+//         <Text style={{fontSize: 46, color: 'red'}}>World</Text>
+//       </Text>
+//       <View
+//         style={{
+//           flex: 0.5,
+//           backgroundColor: 'orange',
+//           margin: 20,
+//           padding: 10,
+//           justifyContent: 'center',
+//           alignItems: 'center',
+//           borderRadius: 5,
+//           flexDirection: 'column',
+//         }}>
+//         <Text>Hello1</Text>
+//         <Text>Hello2</Text>
+//         <Text>Hello3</Text>
+//       </View>
+//     </View>
+//   );
+// }
+
 export default function App() {
   return (
-    <View>
-      <Text
-        style={{
-          fontWeight: 'bold',
-          fontStyle: 'normal',
-          textAlign: 'right',
-        }}>
-        <Text style={{fontSize: 26, color: 'blue'}}>Hello</Text>
-        <Text style={{fontSize: 46, color: 'pink'}}>World</Text>
-      </Text>
+    <View style={{flex: 1}}>
+      <StatusBar barStyle="light-content" backgroundColor="black" />
       <View
         style={{
-          flex: 0.5,
-          // width: 100,
-          // height: 100,
-          backgroundColor: 'grey',
-          margin: 20,
-          padding: 10,
+          backgroundColor: 'blue',
           justifyContent: 'center',
           alignItems: 'center',
-          borderRadius: 5,
-          flexDirection: 'column-reverse',
+          elevation: 5,
+          paddingVertical: 20,
         }}>
-        <Text>Hello1</Text>
-        <Text>Hello2</Text>
-        <Text>Hello3</Text>
+        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 25}}>
+          Header
+        </Text>
       </View>
     </View>
   );
